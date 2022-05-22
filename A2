@@ -1,0 +1,90 @@
+#set declearation
+S={1,2,3,4}
+print(S)
+
+
+#set with differnt data
+S={19,36,56.23,"Tushar","Ram"}
+print(S)
+
+
+#set cannot have duplicate value
+#S={1,6,5,8,1,7}
+#print(S)
+
+#set created from list
+S=([11,65,77,55],9,8)
+print(S)
+
+
+#empty set
+a={}
+print(type(a))
+
+
+a=set()
+print(type(a))
+
+#addition 
+x={1,4,5}
+x.add(7)
+print(x)
+
+#update
+x.update([44,756,54,61,33])
+print(x)
+
+#remove
+x.remove(756)
+print(x)
+
+#discard
+x.discard(61)
+print(x)
+
+
+x.discard(44)
+print(x)
+
+#pop
+x.pop()
+print(x)
+
+x.pop()
+print(x)
+
+
+M={1,2,3,4,5,9}
+N={4,5,6,7,8}
+
+#union
+print(M.union(N))
+
+print(M & N)
+
+#intersection
+print(M.intersection(N))
+
+print(M | N)
+
+#difference
+print(M - N)
+
+print(M.difference(N))
+
+
+i={1,2,3,9,8,6}
+j={1,2,3,4,5}
+k={1,2,4,5,6}
+
+print(i.issubset(j))
+
+print(i.issubset(k))
+
+print(j.issubset(k))
+
+print(j.issubset(i))
+
+print(k.issubset(i))
+
+print(k.issubset(j))
